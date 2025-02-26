@@ -1,0 +1,39 @@
+{
+  "name": "qrquest",
+  "version": "0.1.0",
+  "description": "QR-code quest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "gen": "node gen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milk-Cool/qrquest.git"
+  },
+  "keywords": [
+    "qr",
+    "code",
+    "qrcode",
+    "game",
+    "quest"
+  ],
+  "author": "Milk_Cool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Milk-Cool/qrquest/issues"
+  },
+  "homepage": "https://github.com/Milk-Cool/qrquest#readme",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "better-sqlite3-session-store": "^0.1.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5"
+  }
+}

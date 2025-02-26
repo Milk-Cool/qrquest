@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QRQuest</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            h1 {
+                position: fixed;
+                top: 50vh;
+                left: 50vw;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-family: sans-serif;
+                text-align: center;
+            }
+            a {
+                color: cornflowerblue;
+            }
+            body {
+                background: darkslategray;
+            }
+        </style>
+    </head>
+    <body>
+        <% if(left == 0) { %>
+            <h1>Все коды найдены!<br>Напиши <a href="<%= contact %>">сюда (тык)</a> для приза :3</h1>
+        <% } else { %>
+            <h1>Это QR-код №<%= no %>!<br>Осталось найти ещё <%= left %>.</h1>
+        <% } %>
+    </body>
+</html>
